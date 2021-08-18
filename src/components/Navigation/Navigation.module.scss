@@ -1,0 +1,51 @@
+@import "../../../public/sass/main.scss";
+
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	&__centered {
+		display: none;
+		flex: 0 0 20%;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	&__toggler {
+		padding: 5px 5px 10px;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+	}
+}
+
+.nav__btn {
+	display: inline-block;
+	position: relative;
+	width: 30px;
+	height: 2px;
+	background-color: #000;
+	&::before {
+		position: absolute;
+		content: "";
+		left: 0;
+		top: 8px;
+		width: 30px;
+		height: 2px;
+		border: none;
+		background-color: #000;
+	}
+	&::after {
+		width: 30px;
+		height: 2px;
+		border: none;
+		background-color: #000;
+		position: absolute;
+		content: "";
+		left: 0;
+		top: -8px;
+	}
+}
+
+.logo {
+}

@@ -1,0 +1,13 @@
+.features {
+	&__intro {
+		padding-bottom: 6rem;
+	}
+
+	&__title {
+		font-size: 3.5rem;
+		width: 50%;
+		margin: 0 auto;
+		font-weight: 500;
+		color: var(--primary-blue);
+	}
+}

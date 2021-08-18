@@ -1,0 +1,22 @@
+.btn {
+	padding: 1rem 5rem;
+	border-radius: 25px;
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+}
+.btn--request {
+	display: none;
+}
+
+.btn--invite {
+	align-self: center;
+	padding: 2rem 7rem;
+	font-size: 2rem;
+	color: var(--pure-white);
+	background-image: linear-gradient(
+		to right,
+		var(--secondary-color),
+		var(--accent-color)
+	);
+}
