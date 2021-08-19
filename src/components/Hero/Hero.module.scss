@@ -1,14 +1,33 @@
+@import "../../../public/sass/main.scss";
+
 .hero {
 	display: flex;
-	flex-direction: column;
-	padding-bottom: 10rem;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	@include respond(tab-land) {
+		flex-direction: column;
+		padding-bottom: 10rem;
+	}
+
 	&__left {
+		flex: 0 0 50%;
+		order: 2;
 		position: relative;
-		min-height: 60vh;
-		background-image: url("../../images/bg-intro-mobile.svg");
+		height: 50rem;
+		background-image: url("../../images/bg-intro-desktop.svg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
+		background-position-x: 24rem;
+		@include respond(tab-land) {
+			flex: initial;
+			width: 100%;
+			order: initial;
+			height: 60vh;
+			background-image: url("../../images/bg-intro-mobile.svg");
+			background-position-x: 0;
+		}
 		&::after {
 			content: "";
 			position: absolute;
@@ -17,14 +36,25 @@
 			width: 100%;
 			height: 100%;
 			background-image: url("../../images/image-mockups.png");
-			background-size: cover;
+			background-size: 60%;
 			background-repeat: no-repeat;
-			background-position: center -16rem;
+			background-position: 80% -10rem;
+			@include respond(tab-land) {
+				background-position: center -16rem;
+				background-size: calc(40vh + 15%);
+			}
 		}
 	}
 	&__right {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		flex: 0 0 50%;
 		&-content {
 			display: flex;
+			width: 80%;
+			text-align: left;
 			flex-direction: column;
 			justify-content: space-evenly;
 			min-height: 40vh;

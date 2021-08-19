@@ -17,7 +17,7 @@ const Articles = (props) => {
 	});
 	return (
 		<section className={classes.articles}>
-			<h2>Lastest Articles</h2>
+			<h2 className={classes["articles__title"]}>Lastest Articles</h2>
 			{articles}
 		</section>
 	);

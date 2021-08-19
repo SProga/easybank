@@ -1,22 +1,59 @@
 @import "../../../public/sass/main.scss";
 
 .nav {
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	margin: 0 auto;
+	border: 1px solid red;
 	&__centered {
-		display: none;
+		display: flex;
 		flex: 0 0 20%;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
+		@include respond(tab-land) {
+			visibility: hidden;
+			opacity: 0;
+			display: flex;
+			position: fixed;
+			min-height: 34vh;
+			top: 10rem;
+			left: 0;
+			flex-direction: column;
+			width: 90%;
+			max-width: 50rem;
+			background-color: var(--pure-white);
+			border-radius: 5px;
+			z-index: 999999;
+			box-shadow: 0px 90px 100px 10vh rgba(0, 0, 0, 0.564);
+			transition: all 0.4s ease-in-out;
+
+			& > a {
+				font-size: 2rem;
+				text-decoration: none;
+				color: var(--primary-blue);
+			}
+		}
 	}
 	&__toggler {
-		padding: 5px 5px 10px;
-		background: transparent;
-		border: none;
-		cursor: pointer;
+		display: none;
+		@include respond(tab-land) {
+			display: block;
+			padding: 5px 5px 10px;
+			background: transparent;
+			border: none;
+			cursor: pointer;
+		}
 	}
+}
+
+.show__dropdown {
+	left: 50%;
+	opacity: 1;
+	visibility: visible;
+	transform: translate(-50%, 0);
 }
 
 .nav__btn {

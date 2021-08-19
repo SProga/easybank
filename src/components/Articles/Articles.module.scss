@@ -4,4 +4,10 @@
 	align-items: center;
 	background-color: var(--light-gray);
 	padding: 5rem 0;
+	&__title {
+		display: block;
+		font-size: 3rem;
+		margin-bottom: 3rem;
+		color: var(--primary-blue);
+	}
 }
