@@ -1,13 +1,13 @@
 import React from "react";
 import Button from "../UI/Button/Button";
 import classes from "./Hero.module.scss";
+import heroSplash from "../../images/image-mockups.png";
 
 const Hero = (props) => {
 	return (
 		<section className={classes.hero}>
-			<div className={classes["hero__left"]}></div>
-			<div className={classes["hero__right"]}>
-				<div className={classes["hero__right-content"]}>
+			<div className={`${classes["hero__left"]} row`}>
+				<div className={classes["hero__left-content"]}>
 					<h1 className={classes["hero__title"]}>
 						Next generation digital banking
 					</h1>

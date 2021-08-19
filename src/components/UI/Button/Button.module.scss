@@ -1,3 +1,5 @@
+@import "../../../../public/sass/main.scss";
+
 .btn {
 	padding: 1rem 5rem;
 	border-radius: 25px;
@@ -6,13 +8,28 @@
 	font-family: inherit;
 }
 .btn--request {
-	display: none;
+	padding: 1.2rem 3rem;
+	font-size: 1.2rem;
+	background-image: linear-gradient(
+		to right,
+		var(--secondary-color),
+		var(--accent-color)
+	);
+	color: var(--pure-white);
+	@include respond(tab-land) {
+		display: none;
+	}
 }
 
 .btn--invite {
-	align-self: center;
-	padding: 2rem 7rem;
-	font-size: 2rem;
+	align-self: flex-start;
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	padding: 1.2rem 3rem;
+	@include respond(tab-land) {
+		align-self: center;
+	}
+
 	color: var(--pure-white);
 	background-image: linear-gradient(
 		to right,

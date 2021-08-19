@@ -1,14 +1,48 @@
+@import "../../../public/sass/main.scss";
+
 .features {
 	background-color: var(--light-gray-blue);
+	text-align: left;
 	&__intro {
 		padding: 6rem 0;
 	}
 
+	&__info {
+		@include respond(tab-land) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	@include respond(tab-land) {
+		margin-top: 45rem;
+	}
+
 	&__title {
+		@include respond(tab-land) {
+			width: 80%;
+			text-align: center;
+		}
+
 		font-size: 3.5rem;
-		width: 50%;
 		margin: 0 auto;
 		font-weight: 500;
 		color: var(--primary-blue);
+	}
+
+	&__text {
+		width: 50%;
+		@include respond(tab-land) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	&__content {
+		display: flex;
+		@include respond(tab-land) {
+			flex-direction: column;
+			text-align: center;
+		}
 	}
 }

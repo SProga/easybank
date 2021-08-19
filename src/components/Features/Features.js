@@ -17,13 +17,15 @@ const Features = (props) => {
 	return (
 		<section className={classes.features}>
 			<div className={classes["features__intro"]}>
-				<h2 className={classes["features__title"]}>Why Choose Easybank?</h2>
-				<p className="paragraph--light mt-s">
-					We leverage Open Banking to turn your bank account into your financial
-					hub. Control your finances like never before.
-				</p>
+				<div className={`${classes["features__info"]} row`}>
+					<h2 className={classes["features__title"]}>Why Choose Easybank?</h2>
+					<p className={`${classes["features__text"]} paragraph--light mt-s`}>
+						We leverage Open Banking to turn your bank account into your
+						financial hub. Control your finances like never before.
+					</p>
+				</div>
 			</div>
-			{feature}
+			<div className={`${classes["features__content"]} row`}>{feature}</div>
 		</section>
 	);
 };

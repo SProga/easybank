@@ -4,6 +4,7 @@
 	--accent-color: hsl(192, 70%, 51%);
 	--gray-blue: hsl(233, 8%, 62%);
 	--light-gray-blue: hsl(220, 16%, 96%);
+	--lighter-gray-blue: hsl(210, 20%, 98%);
 	--light-gray: hsl(0, 38%, 97%);
 	--pure-white: hsl(0, 0%, 100%);
 	--headingOne: 5rem;
@@ -47,7 +48,7 @@ body {
 }
 
 .container {
-	max-width: 144rem;
+	max-width: 164rem;
 	margin: 0 auto;
 }
 
@@ -57,5 +58,15 @@ body {
 	color: var(--pure-white);
 	& > a {
 		color: var(--accent-color);
+	}
+}
+
+.row {
+	max-width: 110rem;
+	margin: 0 auto;
+
+	@include respond(tab-land) {
+		max-width: 80rem;
+		margin: 0 auto;
 	}
 }

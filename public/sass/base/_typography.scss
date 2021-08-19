@@ -1,7 +1,12 @@
 .paragraph--light {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: var(--gray-blue);
-	line-height: 1.7;
+	line-height: 1.5;
+
+	@include respond(tab-land) {
+		line-height: 1.7;
+		font-size: 2rem;
+	}
 }
 
 .content__title {
