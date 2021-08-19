@@ -4,7 +4,7 @@
 	--accent-color: hsl(192, 70%, 51%);
 	--gray-blue: hsl(233, 8%, 62%);
 	--light-gray-blue: hsl(220, 16%, 96%);
-	--light-gray: hsl(0, 0%, 98%);
+	--light-gray: hsl(0, 38%, 97%);
 	--pure-white: hsl(0, 0%, 100%);
 	--headingOne: 5rem;
 }
@@ -48,4 +48,13 @@ body {
 
 .container {
 	max-width: 144rem;
+}
+
+.attribution {
+	margin-top: 2rem;
+	font-size: 1.7rem;
+	color: var(--pure-white);
+	& > a {
+		color: var(--accent-color);
+	}
 }

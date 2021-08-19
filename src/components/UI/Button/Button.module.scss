@@ -20,3 +20,15 @@
 		var(--accent-color)
 	);
 }
+.btn--invite-small {
+	margin-top: 2rem;
+	align-self: center;
+	padding: 2rem 6rem;
+	font-size: 1.5rem;
+	color: var(--pure-white);
+	background-image: linear-gradient(
+		to right,
+		var(--secondary-color),
+		var(--accent-color)
+	);
+}

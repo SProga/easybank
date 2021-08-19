@@ -9,3 +9,15 @@
 	color: var(--primary-blue);
 	font-weight: 400;
 }
+.paragraph--light.card__text {
+	line-height: 1.4;
+	font-size: 1.7rem;
+}
+.paragraph--light.card__text::after {
+	content: " ...";
+}
+
+small {
+	font-size: 1.5rem;
+	color: var(--gray-blue);
+}

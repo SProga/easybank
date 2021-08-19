@@ -25,7 +25,7 @@ const featuresList = [
 	{
 		id: "f4",
 		img: openApi,
-		title: "Open Api",
+		title: "Open API",
 		text: "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.",
 	},
 ];

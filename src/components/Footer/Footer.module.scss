@@ -1,0 +1,29 @@
+.footer {
+	width: 100%;
+	padding: 5rem 0;
+	background-color: var(--primary-blue);
+	&__content {
+		width: 60%;
+		margin: 0 auto;
+	}
+	&__navigation {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		& > a {
+			color: var(--pure-white);
+			text-decoration: none;
+			font-size: 1.8rem;
+			line-height: 2.4;
+		}
+	}
+}
+
+.logo {
+	fill: #fff !important;
+}
+
+.max {
+	margin-top: 3rem;
+	width: 100%;
+}
