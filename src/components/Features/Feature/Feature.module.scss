@@ -1,9 +1,16 @@
+@import "../../../../public/sass/main.scss";
+
 .feature {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	align-items: center;
-	min-height: 30rem;
+	align-items: flex-start;
+
+	@include respond(tab-port) {
+		align-items: center;
+	}
+
+	min-height: 35rem;
 	margin: 0 auto;
 	padding: 0.5rem;
 	&__title {
@@ -14,5 +21,13 @@
 	&__img {
 		width: 8.4rem;
 		height: 8.4rem;
+	}
+	&__text {
+		font-size: 1.5rem;
+		line-height: 1.5;
+		color: var(--gray-blue);
+		@include respond(tab-port) {
+			font-size: 1.8rem;
+		}
 	}
 }

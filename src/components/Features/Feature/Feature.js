@@ -6,7 +6,7 @@ const Feature = (props) => {
 		<div className={classes.feature}>
 			<img className={classes["feature__img"]} src={props.src} alt="" />
 			<h2 className={classes["feature__title"]}>{props.title}</h2>
-			<p className="paragraph--light">{props.text}</p>
+			<p className={classes["feature__text"]}>{props.text}</p>
 		</div>
 	);
 };

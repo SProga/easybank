@@ -17,8 +17,10 @@ const Articles = (props) => {
 	});
 	return (
 		<section className={classes.articles}>
-			<h2 className={classes["articles__title"]}>Lastest Articles</h2>
-			{articles}
+			<div className={`row ${classes["articles__content"]}`}>
+				<h2 className={classes["articles__title"]}>Lastest Articles</h2>
+				{articles}
+			</div>
 		</section>
 	);
 };

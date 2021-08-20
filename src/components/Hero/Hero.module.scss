@@ -8,7 +8,7 @@
 	flex-direction: row;
 	justify-content: flex-start;
 	height: 80vh;
-	@include respond(tab-land) {
+	@include respond(tab-port) {
 		height: 40vh;
 	}
 
@@ -23,7 +23,7 @@
 		background-size: 160%;
 		background-position-y: -24rem;
 
-		@include respond(tab-land) {
+		@include respond(tab-port) {
 			position: relative;
 			width: 100%;
 			background-image: url("../../images/bg-intro-mobile.svg");
@@ -35,7 +35,7 @@
 	&::after {
 		content: "";
 		position: absolute;
-		height: 150%;
+		height: 70rem;
 		right: 0;
 		width: 55%;
 		background-image: url("../../images/image-mockups.png");
@@ -44,7 +44,7 @@
 		background-position-x: 13rem;
 		background-position-y: -11rem;
 		z-index: 900;
-		@include respond(tab-land) {
+		@include respond(tab-port) {
 			position: absolute;
 			top: -16rem;
 			left: 50%;
@@ -60,6 +60,10 @@
 		align-items: center;
 		flex: 0 0 100%;
 
+		@include respond(tab-port) {
+			margin-top: 5rem;
+		}
+
 		&-content {
 			display: flex;
 			flex: 0 0 35%;
@@ -67,7 +71,7 @@
 			flex-direction: column;
 			justify-content: space-evenly;
 			min-height: 40vh;
-			@include respond(tab-land) {
+			@include respond(tab-port) {
 				flex: 0 0 100%;
 				text-align: center;
 				margin: 0 auto;
@@ -75,11 +79,13 @@
 		}
 	}
 	&__title {
-		text-align: center;
+		text-align: left;
 		font-size: 4rem;
 		color: var(--primary-blue);
 		font-weight: 400;
-		@include respond(tab-land) {
+		@include respond(tab-port) {
+			text-align: center;
+			border: 1px solid red;
 			width: 85%;
 			font-size: 4.7rem;
 		}

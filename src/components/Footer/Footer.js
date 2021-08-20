@@ -19,14 +19,15 @@ const Footer = (props) => {
 					<a href="/">Careers</a>
 					<a href="/">Support</a>
 					<a href="/">Privacy Policy</a>
-					<Button styles={["btn", "btn--invite-small"]} type="button">
-						Request Invite
-					</Button>
 				</nav>
+				<Button styles={["btn", "btn--invite-small"]} type="button">
+					Request Invite
+				</Button>
+				<p className={`${classes.max} paragraph--light`}>
+					&copy; Easybank.All Rights Reserved
+				</p>
 			</div>
-			<p className={`${classes.max} paragraph--light`}>
-				&copy; Easybank.All Rights Reserved
-			</p>
+
 			<div class="attribution">
 				Challenge by{" "}
 				<a

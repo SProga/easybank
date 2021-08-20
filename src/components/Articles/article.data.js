@@ -16,7 +16,7 @@ const Articles = [
 		img: restaurant,
 		title: " Treat yourself without worrying about money",
 		author: "By Wilson Hutton",
-		text: "Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means yo",
+		text: "Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you",
 	},
 	{
 		id: "a3",

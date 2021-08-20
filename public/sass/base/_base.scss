@@ -63,9 +63,10 @@ body {
 
 .row {
 	max-width: 110rem;
+	padding: 0 3rem;
 	margin: 0 auto;
 
-	@include respond(tab-land) {
+	@include respond(tab-port) {
 		max-width: 80rem;
 		margin: 0 auto;
 	}
