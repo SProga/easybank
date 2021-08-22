@@ -35,14 +35,15 @@
 	&::after {
 		content: "";
 		position: absolute;
-		height: 70rem;
+		height: 60vw;
+		max-height: 90rem;
 		right: 0;
 		width: 55%;
 		background-image: url("../../images/image-mockups.png");
 		background-repeat: no-repeat;
 		background-size: 100%;
 		background-position-x: 13rem;
-		background-position-y: -11rem;
+		background-position-y: 150%;
 		z-index: 900;
 		@include respond(tab-port) {
 			position: absolute;
@@ -83,9 +84,10 @@
 		font-size: 4rem;
 		color: var(--primary-blue);
 		font-weight: 400;
+
 		@include respond(tab-port) {
+			margin: 0 auto;
 			text-align: center;
-			border: 1px solid red;
 			width: 85%;
 			font-size: 4.7rem;
 		}
