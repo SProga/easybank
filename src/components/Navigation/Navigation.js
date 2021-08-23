@@ -14,7 +14,7 @@ const Navigation = () => {
 			<nav className={`${classes.nav} row`}>
 				<div className={classes.logo}>
 					<a href="/">
-						<Logo color="#2D314D" />
+						<Logo color="#2D314D" id="hero" />
 						<span className="sr-only">Home navigation logo</span>
 					</a>
 				</div>

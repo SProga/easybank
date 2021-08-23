@@ -8,7 +8,7 @@ const Footer = (props) => {
 	return (
 		<footer className={classes.footer}>
 			<div className={classes["footer__content"]}>
-				<Logo color="#fff" />
+				<Logo color="#fff" id="footer" />
 				<Socials />
 				<nav
 					aria-label="footer navigation"
