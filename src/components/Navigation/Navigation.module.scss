@@ -15,7 +15,7 @@
 	margin: 0 auto;
 
 	@include respond(tab-land) {
-		padding: 0 2rem;
+		padding: 2rem;
 	}
 	&__centered {
 		display: flex;
