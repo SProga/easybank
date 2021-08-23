@@ -13,12 +13,12 @@ const Footer = (props) => {
 				<nav
 					aria-label="footer navigation"
 					className={classes["footer__navigation"]}>
-					<a href="/">About Us</a>
-					<a href="/">Contact</a>
-					<a href="/">Blog</a>
-					<a href="/">Careers</a>
-					<a href="/">Support</a>
-					<a href="/">Privacy Policy</a>
+					<a href="#8">About Us</a>
+					<a href="#9">Contact</a>
+					<a href="#10">Blog</a>
+					<a href="#11">Careers</a>
+					<a href="#12">Support</a>
+					<a href="#13">Privacy Policy</a>
 				</nav>
 				<Button styles={["btn", "btn--invite-small"]} type="button">
 					Request Invite
