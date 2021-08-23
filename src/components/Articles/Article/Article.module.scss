@@ -5,6 +5,11 @@
 	flex-direction: column;
 	width: 23%;
 	padding-bottom: 4rem;
+	border: 1px solid rgb(238, 238, 238);
+	&:hover {
+		border: 1px solid #ccc;
+		box-shadow: 0 2px 2px #ccc;
+	}
 
 	& > *,
 	& > * > * {
