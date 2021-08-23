@@ -12,6 +12,7 @@ const Articles = (props) => {
 				author={article.author}
 				text={article.text}
 				src={article.img}
+				alt={article.alt}
 			/>
 		);
 	});

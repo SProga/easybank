@@ -13,7 +13,7 @@ const Navigation = () => {
 		<div className={`${classes.navWrapper}`}>
 			<nav className={`${classes.nav} row`}>
 				<div className={classes.logo}>
-					<a href="#0">
+					<a href="/">
 						<Logo color="#2D314D" />
 						<span className="sr-only">Home navigation logo</span>
 					</a>
@@ -34,11 +34,11 @@ const Navigation = () => {
 					className={`${classes["nav__centered"]} ${
 						classes[isNavShown ? "show__dropdown" : ""]
 					}`}>
-					<a href="#2">Home</a>
-					<a href="#3">About</a>
-					<a href="#4">Contact</a>
-					<a href="#5">Blog</a>
-					<a href="#6">Careers</a>
+					<a href="/">Home</a>
+					<a href="/">About</a>
+					<a href="/">Contact</a>
+					<a href="/">Blog</a>
+					<a href="/">Careers</a>
 				</div>
 				<Button type="button" styles={["btn", "btn--request"]}>
 					Request Invite

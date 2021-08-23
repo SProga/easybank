@@ -11,6 +11,7 @@ const Features = (props) => {
 				title={feature.title}
 				text={feature.text}
 				src={feature.img}
+				alt={feature.alt}
 			/>
 		);
 	});

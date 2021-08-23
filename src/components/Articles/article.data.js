@@ -10,12 +10,14 @@ const Articles = [
 		title: "Receive money in any currency with no fees",
 		author: " By Claire Robinson",
 		text: "The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single",
+		alt: "Receive Money",
 	},
 	{
 		id: "a2",
 		img: restaurant,
 		title: " Treat yourself without worrying about money",
 		author: "By Wilson Hutton",
+		alt: "Treat yourself at our Restaurants",
 		text: "Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you",
 	},
 	{
@@ -24,6 +26,7 @@ const Articles = [
 		title: "Take your Easybank card wherever you go",
 		author: "By Wilson Hutton",
 		text: " We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you",
+		alt: "Take a plane trip",
 	},
 	{
 		id: "a4",
@@ -31,6 +34,7 @@ const Articles = [
 		title: "Our invite-only Beta accounts are now live!",
 		author: "By Claire Robinson",
 		text: "After a lot of hard work by the whole team, we’re excited to launch our closed beta.It’s easy to request an invite through the site",
+		alt: "Celebrate with confetti",
 	},
 ];
 
