@@ -6,8 +6,14 @@
 	border: none;
 	cursor: pointer;
 	font-family: inherit;
+	transition: opacity 0.1s linear;
+	&:hover {
+		opacity: 0.7;
+	}
 }
 .btn--request {
+	position: relative;
+	right: 7%;
 	padding: 1.2rem 3rem;
 	font-size: 1.2rem;
 	background-image: linear-gradient(
@@ -28,6 +34,10 @@
 	padding: 1.2rem 3rem;
 	@include respond(tab-land) {
 		align-self: center;
+	}
+	@include respond(tab-port) {
+		font-size: 1.7rem;
+		padding: 1.8rem 4rem;
 	}
 
 	color: var(--pure-white);

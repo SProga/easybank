@@ -1,6 +1,7 @@
 :root {
 	--primary-blue: hsl(233, 26%, 24%);
 	--secondary-color: hsl(136, 65%, 51%);
+	--secondary-color-darker: hsl(155, 42%, 52%);
 	--accent-color: hsl(192, 70%, 51%);
 	--gray-blue: hsl(233, 8%, 62%);
 	--light-gray-blue: hsl(220, 16%, 96%);
@@ -69,5 +70,6 @@ body {
 	@include respond(tab-port) {
 		max-width: 80rem;
 		margin: 0 auto;
+		padding: 0 2rem;
 	}
 }

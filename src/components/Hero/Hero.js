@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "../UI/Button/Button";
 import classes from "./Hero.module.scss";
-import heroSplash from "../../images/image-mockups.png";
 
 const Hero = (props) => {
 	return (

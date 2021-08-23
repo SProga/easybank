@@ -9,8 +9,16 @@
 	grid-row: 2/3;
 	grid-column: 1/2;
 	width: 50%;
+
 	@include respond(tab-port) {
 		width: 80%;
 		max-width: 30rem;
+	}
+}
+
+.icon {
+	fill: var(--pure-white);
+	&:hover {
+		fill: var(--secondary-color-darker);
 	}
 }

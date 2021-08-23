@@ -18,11 +18,18 @@ const Navigation = () => {
 					</a>
 				</div>
 
-				<button className={classes["nav__toggler"]} onClick={navToggleHandler}>
-					<span className={classes["nav__btn"]}></span>
+				<button
+					aria-controls="navbarDropDown"
+					className={classes["nav__toggler"]}
+					onClick={navToggleHandler}
+					aria-expanded="false">
+					<span className={classes["nav__btn"]}>
+						<span className="sr-only">Toggle Navigation</span>
+					</span>
 				</button>
 
 				<div
+					id="navbarDropDown"
 					className={`${classes["nav__centered"]} ${
 						classes[isNavShown ? "show__dropdown" : ""]
 					}`}>

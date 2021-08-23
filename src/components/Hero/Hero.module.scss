@@ -10,6 +10,7 @@
 	height: 80vh;
 	@include respond(tab-port) {
 		height: 40vh;
+		padding-bottom: 5rem;
 	}
 
 	&::before {
@@ -49,9 +50,11 @@
 			position: absolute;
 			top: -16rem;
 			left: 50%;
+			min-height: 60rem;
 			transform: translateX(-50%);
-			width: 46rem;
+			width: Clamp(25rem, 90%, 46rem);
 			background-position: center;
+			background-position-y: 1rem;
 		}
 	}
 
@@ -73,7 +76,7 @@
 			justify-content: space-evenly;
 			min-height: 40vh;
 			@include respond(tab-port) {
-				flex: 0 0 100%;
+				flex: 1 0 105%;
 				text-align: center;
 				margin: 0 auto;
 			}
@@ -88,7 +91,6 @@
 		@include respond(tab-port) {
 			margin: 0 auto;
 			text-align: center;
-			width: 85%;
 			font-size: 4.7rem;
 		}
 	}
